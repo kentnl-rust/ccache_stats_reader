@@ -20,7 +20,9 @@ non_exhaustive = []
 [dependencies.chrono]
 # 0.2.23 is the minimum version I can get compiling on 1.31.0
 # 0.4.0 is the first version that ships the ::Utc struct/trait
-version = ">= 0.4.0"
+version = "^0.4"
+default-features = false
+features = [ "clock" ]
 
 [package.metadata.docs.rs]
 features = [ "nightly" ]
