@@ -13,5 +13,5 @@ use ccache_stats_reader::{CacheDir,CacheField,CacheFieldCollection};
 
 let stats = CacheDir::read_dir("/home/foo/.ccache/").unwrap();
 println!("Direct Cache Hits: {:?}", stats.get_field(CacheField::CacheHitDir));
-println!("Cache Last Zero'd: {}", CacheField::ZeroTimeStamp.format_value( stats.get_field(CacheField::ZeroTimeStamp))
+println!("Cache Last Zero'd: {}", CacheField::ZeroTimeStamp.format_value( stats.get_field(CacheField::ZeroTimeStamp)));
 ```
