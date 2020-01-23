@@ -3,7 +3,7 @@ source ./util/rustflags.sh
 CLIPPY="${CLIPPY:-clippy}"
 XOPTS=(
   "-Z" "unstable-options"
-  "-Z" "cache-messages"
+#  "-Z" "cache-messages"
 )
 PREOPTS=()
 XTARGETS=(
