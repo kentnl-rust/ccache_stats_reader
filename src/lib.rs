@@ -33,9 +33,9 @@ pub enum ErrorKind {
         /// The string that was attempted to be parsed
         input_value: String,
         /// The line of the file that was trying to be decoded
-        input_line: usize,
+        input_line:  usize,
         /// The file that was being read
-        input_file: PathBuf,
+        input_file:  PathBuf,
     },
     /// A path to a non-file was passed to CacheLeaf for reading,
     /// but it turned out to be the kind of thing that can't be expected to
